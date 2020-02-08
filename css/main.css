@@ -450,3 +450,19 @@ iframe {
   transform: translateY(-50%);
   left: 0;
 }
+.back{
+  background: url("../images/fp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.back1{
+  background: url("../images/lg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.form{
+  text-align: left;
+  margin-left: -40%;
+}

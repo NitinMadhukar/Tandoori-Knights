@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V6</title>
+	<title>Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -28,28 +28,20 @@
 <!--===============================================================================================-->
 </head>
 <body>
-<div class="container-login100" style="background-image: url('images/lg.png');"> 
+<div class="container-login100 back1"> 
  
-			<div class="wrap-login100 p-t-45 p-b-20">
+			<div class="form">
 
-				<form class="login100-form validate-form" >
+				<form class="login100-form validate-form" action="backend/signupBack2.php" method="POST">
+					
 
-					<span class="login100-form-title p-b-70">
-						Welcome
-					</span>
-					<span class="login100-form-avatar">
-						<img src="images/profile.png" alt="AVATAR">
-					</span>
-
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Username"></span>
+					<div class="wrap-input100 validate-input m-b-50" data-validate="password">
+						<input class="input100" type="name" name="name">
+						<span class="focus-input100" data-placeholder="Name"></span>
 					</div>
 
-					 
-
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" href="./daata.html">
+						<button class="login100-form-btn" type="submit" name="submit">
 							Done
 						</button>
 					</div>

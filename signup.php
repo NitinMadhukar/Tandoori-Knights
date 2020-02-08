@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V6</title>
+	<title>Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -28,32 +28,30 @@
 <!--===============================================================================================-->
 </head>
 <body>
-<div class="container-login100" style="background-image: url('images/lg.png');"> 
+<div class="container-login100 back"> 
  
-			<div class="wrap-login100 p-t-45 p-b-20">
+			<div class="form">
 
-				<form class="login100-form validate-form" >
-
-					<span class="login100-form-title p-b-70">
-						Welcome
-					</span>
-					<span class="login100-form-avatar">
-						<img src="images/profile.png" alt="AVATAR">
-					</span>
+				<form class="login100-form validate-form" action="backend/signupBack.php" method="POST">
 					
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter email">
-						<input class="input100" type="email" name="email">
-						<span class="focus-input100" data-placeholder="email"></span>
+					
+					<div class="wrap-input100 validate-input m-b-50" data-validate = "Enter phone number">
+						<input class="input100" type="phone number" name="phoneNo">
+						<span class="focus-input100" data-placeholder="Phone number"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter aadhar number">
-						<input class="input100" type="aadhar number" name="number">
-						<span class="focus-input100" data-placeholder="aadhar number"></span>
+					<div class="wrap-input100 validate-input m-b-50" data-validate="password">
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
 					</div>
 
+						<div class="wrap-input100 validate-input m-b-50" data-validate="re-enter password">
+						<input class="input100" type="password" name="password1">
+						<span class="focus-input100" data-placeholder="Confirm Password"></span>
+					</div>
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" href="./daata.html">
-							next
+						<button class="login100-form-btn" type="submit" name="submit">
+							Signup
 						</button>
 					</div>
 				</form>
